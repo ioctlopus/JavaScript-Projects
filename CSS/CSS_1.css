@@ -1,0 +1,16 @@
+input{
+    width: 50%;
+    background-color: bisque;
+    color: blue;
+}
+
+.sub_but{
+    width: 10%;
+    background-color: black;
+    color: antiquewhite;
+    border: 3px solid blueviolet;
+}
+
+form{
+    align-items: center;
+}
