@@ -46,16 +46,32 @@ function do_ret(){
     document.getElementById("ret").innerHTML = my_ret();
 }
 
-function obj_method(){
+function use_obj(){
     let my_object = {
         name: "Allan",
         age: 33,
         display : function(){
-            return (this.name + " - " + String(this.age));
+            let st = (this.name + " - " + String(this.age))
+            document.getElementById("ob").innerHTML = st;
         }
-    }
+    };
+    my_object.display();
 }
 
-function use_obj(){
-    document.getElementById("ob").innerHTML = obj_method();
+function break_cont(){
+    let st = "";
+    while(true){
+        st += "C";
+        if(st.length >= 10){
+            break;
+        }
+    }
+    st += "  ";
+    for(let i = 0; i < 10; i++){
+        if(i == 4){
+            continue;
+        }
+        st += (String(i) + " ")
+    }
+    document.getElementById("b_con").innerHTML = st;
 }
