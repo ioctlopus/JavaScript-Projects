@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Arrow Functions</title>
+        <script>
+            let a_func = (x, y) => x + y;
+            function run(){
+                document.getElementById("an_id").innerHTML = a_func("Half", "Other");
+            }
+        </script>
+    </head>
+
+    <body>
+        <button onclick='run();''>Run</button>
+        <p id="an_id"></p>
+    </body>
+</html>
